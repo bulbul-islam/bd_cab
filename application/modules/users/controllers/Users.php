@@ -48,10 +48,15 @@ class Users extends MX_Controller
 		$this->dm->insert('company',$data);
 		redirect('users/show_company');
 	}
+
 	
 	public function shaon()
 	{
 		$this is demo ;
+
+	public function update_company(){
+		
+
 	}
 
     
