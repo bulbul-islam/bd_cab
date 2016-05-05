@@ -15,12 +15,15 @@ class Users extends MX_Controller
 		$this->load->model('Dynamic_Model','dm');
 		$this->load->helper('image_helper');
     }
+    
     public function index()
     {
         $data = array();
         $data['main_content'] = $this->load->view('dashboard',$data,true);
-        $this->load->view('admin_master',$data);    }
-	public function show_company(){
+        $this->load->view('admin_master',$data);    
+    	
+    }
+    public function show_company(){
 		$data=array();
 		$data['view']=$this->dm->get('company');
 		/*
